@@ -20,6 +20,7 @@ body {
 }
 
 button {
+  cursor: pointer;
   border: none;
   border-radius: 100px;
   color: white;
@@ -156,10 +157,17 @@ h1 {
 /* -------------------trendingContent------------ */
 
 .trendingContent {
+  cursor: pointer;
   position: relative;
   display: flex;
   width: 30%;
   min-height: 120px;
+  transition: 0.4s ease-in;
+}
+
+.trendingContent:hover {
+  box-shadow: 0px 10px 15px grey;
+  transition: 0.4s ease-in;
 }
 
 .trendingTextTop {
@@ -226,10 +234,18 @@ h6 {
 }
 
 .article {
+  cursor: pointer;
   padding-right: 10%;
   object-fit: cover;
   display: flex;
   min-height: 170px;
+  transition: 0.4s ease-in;
+}
+
+.article:hover {
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px grey;
+  transition: 0.4s ease-in;
 }
 
 .bookMark {
@@ -304,6 +320,7 @@ h5 {
 }
 
 .argumets div {
+  cursor: pointer;
   box-sizing: content-box;
   padding-block: 2%;
   padding-inline: 3%;
