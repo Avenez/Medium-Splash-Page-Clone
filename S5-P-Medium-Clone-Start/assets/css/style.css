@@ -1,0 +1,376 @@
+/* colori----------
+giallo #ffc017
+nero #191919
+verde #318A10
+--------------------
+font---------------
+font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif;
+
+
+*/
+* > {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 100px;
+  color: white;
+}
+
+.buttonFirstBGColor,
+.buttonSecondBGColor {
+  transition: all 0.5s ease-in-out;
+}
+
+.buttonFirstBGColor {
+  background-color: #191919;
+}
+.buttonSecondBGColor {
+  background-color: #318a10;
+}
+
+/* -----------------header--------------------- */
+a {
+  text-decoration: none;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #191919;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.headerFirstBGColor,
+.headerSecondBGColor {
+  transition: all 0.5s ease-in-out;
+}
+
+.headerFirstBGColor {
+  background-color: #ffc017;
+}
+
+.headerSecondBGColor {
+  background-color: white;
+}
+
+nav {
+  height: 100%;
+  margin-inline: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.navLinks button {
+  width: 103px;
+  height: 37px;
+}
+
+/* -----------------hero--------------------- */
+
+.hero {
+  height: 455px;
+  background-color: #ffc017;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 40px;
+  margin-left: 15%;
+}
+
+.title button {
+  width: 213px;
+  height: 41px;
+  font-size: 20px;
+}
+
+.title p {
+  font-size: 24px;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 106px;
+  font-weight: 400;
+}
+
+/* -----------TRENDING------------------- */
+
+.trendingSection {
+  height: 345px;
+  border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+.trending {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  width: 70%;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+
+.trendingTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* -------------------trendingContent------------ */
+
+.trendingContent {
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 120px;
+}
+
+.trendingTextTop {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.trendingTextBottom {
+  display: flex;
+}
+
+.trendingTextBottom > p:nth-of-type(2) {
+  left: 70%;
+  position: absolute;
+}
+
+.trendingTextBottom > p {
+  color: rgb(68, 68, 68);
+}
+
+.trendingContent img,
+.author img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.trendingContent h3 {
+  margin-right: 15px;
+  font-size: 32px;
+  color: lightgray;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 5px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+/* -------ARTICLES---------- */
+
+.bottomArticles {
+  width: 75%;
+  margin-left: 15%;
+  display: flex;
+  padding-block: 5rem;
+}
+
+.articles {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.article {
+  padding-right: 10%;
+  object-fit: cover;
+  display: flex;
+  height: 170px;
+}
+
+.bookMark {
+  margin-right: 3%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.article > img:last-child {
+  max-width: 250px;
+}
+
+.articleText {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 15px; */
+  justify-content: space-between;
+}
+
+.articleBottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.articleBottom span {
+  box-sizing: content-box;
+  padding: 1%;
+  border-radius: 100px;
+  background-color: rgb(214, 214, 214);
+  color: rgb(90, 90, 90);
+  padding-inline: 1%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ---------DISCOVER---------------- */
+.discover {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-inline: 3rem;
+}
+
+.discover > div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.argumets {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+.argumets div {
+  box-sizing: content-box;
+  padding-block: 2%;
+  padding-inline: 3%;
+  border: 1px solid lightgray;
+  color: grey;
+}
+
+.discoverList {
+  border-top: 1px solid lightgray;
+  padding-block: 5%;
+  width: 80%;
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.discover a {
+  color: grey;
+}
+
+@media only screen and (max-width: 576px) {
+  .title {
+    margin-left: 7%;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 61px;
+    white-space: nowrap;
+  }
+
+  .navLinks button {
+    width: 90px;
+    height: 30px;
+  }
+
+  nav img {
+    width: 80%;
+  }
+
+  .title p {
+    font-size: 19px;
+  }
+
+  button {
+    font-size: 10px;
+  }
+
+  nav {
+    width: 85%;
+    font-size: 10px;
+    margin-inline: 7%;
+  }
+
+  .navLinks {
+    width: 67%;
+    column-gap: 12px;
+    font-size: 12px;
+  }
+
+  .trendingContent {
+    width: 50%;
+  }
+
+  .trendingSection {
+    height: 550px;
+  }
+}
