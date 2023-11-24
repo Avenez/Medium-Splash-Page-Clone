@@ -14,7 +14,6 @@ font-family: 'Spectral', serif;
 }
 
 body {
-  height: 100%;
   position: relative;
   color: #191919;
   font-family: "Roboto", sans-serif;
@@ -90,13 +89,13 @@ nav {
 
 .navLinks button {
   width: 103px;
-  height: 37px;
+  min-height: 37px;
 }
 
 /* -----------------hero--------------------- */
 
 .hero {
-  height: 455px;
+  min-height: 455px;
   background-color: #ffc017;
   margin-top: 75px;
   display: flex;
@@ -115,7 +114,7 @@ nav {
 
 .title button {
   width: 213px;
-  height: 41px;
+  min-height: 41px;
   font-size: 20px;
 }
 
@@ -132,7 +131,7 @@ h1 {
 /* -----------TRENDING------------------- */
 
 .trendingSection {
-  height: 345px;
+  min-height: 345px;
   border-bottom: 1px solid rgb(158, 158, 158);
 }
 
@@ -160,7 +159,7 @@ h1 {
   position: relative;
   display: flex;
   width: 30%;
-  height: 120px;
+  min-height: 120px;
 }
 
 .trendingTextTop {
@@ -230,7 +229,7 @@ h6 {
   padding-right: 10%;
   object-fit: cover;
   display: flex;
-  height: 170px;
+  min-height: 170px;
 }
 
 .bookMark {
@@ -339,7 +338,7 @@ h5 {
 
   .navLinks button {
     width: 90px;
-    height: 30px;
+    min-height: 30px;
   }
 
   nav img {
@@ -371,6 +370,6 @@ h5 {
   }
 
   .trendingSection {
-    height: 550px;
+    min-height: 550px;
   }
 }
